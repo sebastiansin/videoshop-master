@@ -51,6 +51,7 @@ public class Disc extends Product {
 	// primitve Typen oder Strings müssen nicht extra für JPA annotiert werden
 	private String genre, image;
 	private DiscType type;
+	private float rabatt;
 
 	// (｡◕‿◕｡)
 	// Jede Disc besitzt mehrere Kommentare, eine "1 zu n"-Beziehung -> @OneToMany für JPA
@@ -58,21 +59,22 @@ public class Disc extends Product {
 	// "interagiert"
 	@OneToMany(cascade = CascadeType.ALL) //
 	private List<Comment> comments = new ArrayList<>();
-	private float raba;
+
+
 
 	@SuppressWarnings("unused")
 	private Disc() {}
 
-	public Disc(String name, String image, Money price, String genre, DiscType type, float raba) {
+	public Disc(String name, String image, Money price, String genre, DiscType type, float rabatt) {
 		
 		
-		super(name, price.subtract(price.multiply(rabatt(raba))));
+		super(name, price.subtract(price.multiply(rabatt(rabatt))));
 		
 		
 
 		
 		
-		
+		this.rabatt = rabatt;
 		this.image = image;
 		this.genre = genre;
 		this.type = type;
@@ -97,6 +99,10 @@ public class Disc extends Product {
 
 	public String getImage() {
 		return image;
+	}
+	
+	public float getrabatt() {
+		return rabatt;
 	}
 
 	public DiscType getType() {
