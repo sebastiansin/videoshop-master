@@ -33,6 +33,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 class CatalogController {
@@ -95,6 +96,17 @@ class CatalogController {
 
 		return "redirect:/disc/" + disc.getId();
 	}
+	
+	
+	@PostMapping("/disc/{disc}")
+	String Raba(@PathVariable Disc disc, @RequestParam("number") String rabatt) {
+		
+		disc.setRabatt(rabatt);
+		catalog.save(disc);
+		
+		return "redirect:/disc/" + disc.getId();
+	}
+	
 
 	/**
 	 * Describes the payload to be expected to add a comment.

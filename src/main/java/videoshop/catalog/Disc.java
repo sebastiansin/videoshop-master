@@ -33,11 +33,11 @@ import org.salespointframework.quantity.Metric;
 @Entity
 public class Disc extends Product {
 	
-	public static float rabatt(float raba) {
+	public static float rabattt(String raba) {
 		float x=0;
-		//float raba = 0;
+		float y = Float.parseFloat(raba);
 		
-		x= raba/100;
+		x= y/100;
 		
 		return x;
 	}
@@ -51,7 +51,7 @@ public class Disc extends Product {
 	// primitve Typen oder Strings müssen nicht extra für JPA annotiert werden
 	private String genre, image;
 	private DiscType type;
-	private float rabatt;
+	private String rabatt;
 
 	// (｡◕‿◕｡)
 	// Jede Disc besitzt mehrere Kommentare, eine "1 zu n"-Beziehung -> @OneToMany für JPA
@@ -65,10 +65,10 @@ public class Disc extends Product {
 	@SuppressWarnings("unused")
 	private Disc() {}
 
-	public Disc(String name, String image, Money price, String genre, DiscType type, float rabatt) {
+	public Disc(String name, String image, Money price, String genre, DiscType type, String rabatt) {
 		
 		
-		super(name, price.subtract(price.multiply(rabatt(rabatt))));
+		super(name, price.subtract(price.multiply(rabattt(rabatt))));
 		
 		
 
@@ -86,6 +86,16 @@ public class Disc extends Product {
 
 	public void addComment(Comment comment) {
 		comments.add(comment);
+		
+	}
+	
+	public void setRabatt(String rabatt){
+		this.rabatt = "10";
+	}
+
+	private static void add(String rabatt2) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	// (｡◕‿◕｡)
@@ -101,7 +111,7 @@ public class Disc extends Product {
 		return image;
 	}
 	
-	public float getrabatt() {
+	public String getRabatt() {
 		return rabatt;
 	}
 
