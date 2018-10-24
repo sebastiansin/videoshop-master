@@ -60,7 +60,9 @@ public class Disc extends Product {
 	// "interagiert"
 	@OneToMany(cascade = CascadeType.ALL) //
 	private List<Comment> comments = new ArrayList<>();
+
 	private Money price;
+	private Money pricee;
 	
 
 
@@ -68,13 +70,13 @@ public class Disc extends Product {
 	@SuppressWarnings("unused")
 	private Disc() {}
 
-	public Disc(String name, String image, Money price, String genre, DiscType type, String rabatt) {
+	public Disc(String name, String image, Money price, String genre, DiscType type, String rabatt, Money pricee) {
 		
 		
-		super(name, price);
-		
+		super(name, pricee );
 		
 		this.price = price;
+		this.pricee = pricee;
 		this.rabatt = rabatt;
 		this.image = image;
 		this.genre = genre;
@@ -94,20 +96,16 @@ public class Disc extends Product {
 		this.rabatt = rabatt;
 		
 		float x=0;
-		double z= 0;
 		float y = Float.parseFloat(rabatt);
 		
 		
-		x= (float) (Math.round((y/100) * 100) / 100.0);
+		//x= (float) (Math.round((y/100) * 100) / 100.0);
+		x= y/100;
 		
-		
-		this.price = price.subtract(price.multiply(x));
+		this.price = pricee.subtract(pricee.multiply(x));
 	}
 
-	private static void add(String rabatt2) {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 	// (｡◕‿◕｡)
 	// Es ist immer sinnvoll sich zu überlegen wie speziell der Rückgabetyp sein sollte
