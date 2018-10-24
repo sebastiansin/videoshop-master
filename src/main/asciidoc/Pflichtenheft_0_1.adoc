@@ -1,0 +1,223 @@
+
+
+Pflichtenheft
+
+Zoohandlung
+
+Gruppe 44: Kevin Santruschek, Kevin
+
+Agastra, Jan Sommer, Rebekka Martens,
+
+Florian Ast, Sebastian Singer
+
+Version: _0.1_
+
+Status: _in Bearbeitung_
+
+Stand: _20. Oktober 2018_
+
+== Zusammenfassung
+
+Dieses Pflichtenheft beinhaltet die notwendigen Spezifikationen der
+Verwaltungssoftware für eine Zoohandlung. Es erfolgt ein Überblick der
+Funktionen des Programmes und des Weiteren werden allen Dokumenten der
+Analyse und des Entwurfes mit beigefügt.
+
+Die Anwendung verwaltet sowohl den Shop Vorort als auch einen
+Onlineshop. Zusätzlich gibt es auch die Funktion der Verwaltung der
+Tierpension, der Erstellung Aktionsflyer sowie die Erstellung von
+Statistiken.
+
+[cols=",,,,",]
+|=================================================
+|0.1 |In Arbeit |20.10.18 |Autor |Initiale Version
+|=================================================
+
+== Aufgabenstellung und Zielsetzung
+--------------------------------
+
+Es soll eine Software für den Einsatz in einer Zoohandlung entwickelt
+werden. Folgende Geschäftsfelder sind dabei zu berücksichtigen:
+
+Der Verkaufsbereich ist in vier Abteilungen gegliedert: Lebendtiere,
+Tierfutter, Zubehör und Dienstleistungen. Die Laufkundschaft der
+Zoohandlung kann Kleintiere (Nager, Fische, Sittiche und Finken,
+heimische Reptilien) besichtigen und erwerben. Es müssen von jeder
+Tierart eine bestimmte Mindestmenge, sowie ausreichend artspezifische
+Transportbehältnisse vorhanden sein. Die Abteilungen Tierfutter, Zubehör
+und Dienstleistungen bilden jeweils ein vielfältiges Warensortiment,
+welches verschiedenen Kategorien (Futter: Nassfutter, Trockenfutter,
+Nahrungsergänzung usw.; Zubehör: Reisezubehör, Leinen/Halsbänder,
+Spielzeug, Fachliteratur usw.) angehört. Für jeden Artikel ist eine
+Mindestanzahl festgelegt. Wenn diese unterschritten wird, ist eine
+Nachbestellung einzuleiten. Bei Futtermitteln ist darüber hinaus das
+Haltbarkeitsdatum zu berücksichtigen. Dienstleistungen haben keine
+Mindestmenge oder Kategorie. Die Zoohandlung verkauft auf Bestellung
+auch exotische Tiere. Wenn der potentielle Tierhalter ein entsprechendes
+Zertifikat, das ihn zur Haltung exotischer Tiere berechtigt, vorlegen
+kann, wird eine Bestellung bei einem entsprechenden Anbieter ausgelöst
+und dem Kunden ein Abholtermin genannt. Des Weiteren sollen Aktionssets
+aus Bestandsartikeln zusammengestellt werden können, welchen ein
+Aktionszeitraum und eine Rabattierung zugewiesen werden. Aus
+verschiedenen Artikeln/Aktionssets sollen sich Aktionsflyer erstellen
+lassen.
+
+Neben dem Verkaufsbereich ist die Zoohandlung auch eine kleine
+Tierpension für Haustiere. Es gibt dort eine bestimmte Anzahl an
+Unterbringungsmöglichkeiten für die einzelnen Tierarten. Es werden je
+nach Tierart Tagessätze für die Unterbringung berechnet. Das Futter wird
+aus dem Bestand der Zoohandlung genommen. Natürlich kann jeder
+Tierhalter angeben, welches Futter sein Tier wann bekommen soll.
+Normalerweise kann ein Tier maximal drei Wochen in der Pension abgegeben
+werden, Ausnahmen sind aber möglich. Wird der Aufenthalt in der Pension
+frühzeitig gebucht, wird ein Preisnachlass gewährt.
+
+Es müssen sowohl die Lieferanten der Artikel, die Kunden und die
+Programmbenutzer verwaltet werden können.
+
+Für den Betreiber der Zoohandlung wäre das Erstellen von Statistiken
+wünschenswert. Dabei ist zu berücksichtigen, dass in einer Zoohandlung
+auch interne Kosten anfallen: Futter für die Lebendtiere, Aufbau und
+Wartung/Säuberung von Käfigen, Aquarien und Terrarien und ggf.
+Tierarztrechnungen.
+
+Produktnutzung
+--------------
+
+Die Verwaltungssoftware für die Zoohandlung wird als Web-Applikation in
+Java programmiert. Hierfür wird das Salespoint- und Spring-Framework
+verwendet. Für eine stabile und dennoch kundenfreundliche Nutzung wird
+eine hierarchische Struktur verwendet. Ausgehend vom Status des
+Nutzerkontos werden vom Programm die benötigten Rechte ermittelt, auf
+die der Anwender zugreifen darf. Dabei wird zwischen Kunde, Mitarbeiter
+und Chef (Admin) unterschieden. Dies wird als aufsteigende Rangordnung
+aufgeteilt. Der Kunde hat hierbei nur die Möglichkeiten über den
+Online-Shop Waren (Zubehör und Tierfutter) sowie Exotische Tiere zu
+bestellen. Aufsteigend haben die Konten immer mehr Schnittstellen zur
+Bearbeitung der verschiedenen Datensätze.
+
+Interessengruppen (Stakeholders)
+--------------------------------
+
+Der Lehrstuhl Softwaretechnologie der TU Dresden legt die funktionalen
+Anforderungen für die Software fest. Weitere speziellere Wünsche werden
+von dem Kunden, dem Tutor der Gruppe, geäußert und vom Entwicklerteam
+umgesetzt. Das Entwicklerteam schlägt während des Prozesses auch
+Kann-Kriterien vor.
+
+Systemgrenze und Top-Level-Architektur
+--------------------------------------
+
+Kontextdiagramm
+~~~~~~~~~~~~~~~
+
+Top-Level-Architektur
+~~~~~~~~~~~~~~~~~~~~~
+
+Anwendungsfälle
+---------------
+
+Akteure
+~~~~~~~
+
+[cols=",",]
+|==============
+|​Besucher | nicht Registrierte Perosnen die den Shop beuschen, kann nur Artikel ansehen
+|​Kunde | registrierte Personen die Artikel kaufen und Tiere zur Pension anmelden, kann mit dem System interagieren
+|Mitarbeiter | Registrierter Nutzer überprüft Bestellungen von Kunden und Verwaltet die Artikel
+|Chef (Admin) | Registrierter Nutzer mit Administrations rechten zu Erstellung neuer Artikel und Bearbeitung von MItarbeiter Accounts 
+|==============
+
+Überblick Anwendungsfalldiagramm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Anwendungsfallbeschreibung
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Funktionale Anforderungen
+-------------------------
+
+Muss-Kriterien
+~~~~~~~~~~~~~~
+- Accounts mit Rollen für die Verwaltungsbereiche festlegen
+	o Kunde
+	o Mitarbeiter
+	o Administrator (Chef)
+- Verwaltung von Datensätzen
+	o Personal bzw Kundenkonten
+	o Bestellungen von Artikeln
+	o Lagerbestand
+	o Rabatt Erstellung
+	o Mindesbestand erstellen
+- Übersicht der Datensaätze
+- Erstellung von Statistiken
+	o Verkauf
+	o Umsatz
+	o Kosten
+- Mitarbeiter kann Waren nachbestellen
+- Nach betätigter Bestellung Rechnung erstellen
+- Aktionsset und Aktionflyer Erstellung
+- Verwaltung der Tierpension
+	o Übersicht der vorhanden Tiere
+	o Kunde kann Tiere anmelden
+
+	
+
+
+
+
+Kann-Kriterien
+~~~~~~~~~~~~~~
+
+Nicht-Funktionale Anforderungen
+-------------------------------
+- Keine Möglichkeit eines Warenwirtschaftsystem
+
+
+Qualitätsziele
+~~~~~~~~~~~~~~
+
+
+[options="header", cols="3h, ^1, ^1, ^1, ^1"]
+|===
+|           | Unwichtig | Weniger wichtig | wichtig | Sehr wichtig 
+|Robustheit          		|   |   |   | x 
+|Zuverlässigkeit        	|   |   | x |   
+|Korrektheit            	|   |   | x  |   
+|Benutzerfreundlichkeit     |   |   |  |  x 
+|Erweiterbarkeit            |  x |   |   |  
+|Leistungsfähigkeit         |   |  x |   | 
+|Wartbarkeit  				|	|	| x	|
+|===
+
+GUI Prototyp
+------------
+
+Überblick: Dialogkarte
+~~~~~~~~~~~~~~~~~~~~~~
+
+Dialogbeschreibung
+~~~~~~~~~~~~~~~~~~
+
+Datenmodell
+-----------
+
+Überblick: Klassendiagramm
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Klassen und Enumerationen
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[cols=",,",]
+|======
+|… |… |
+|======
+
+Akzeptanztestfälle
+------------------
+
+Glossar
+-------
+
+Offene Punkte
+-------------
