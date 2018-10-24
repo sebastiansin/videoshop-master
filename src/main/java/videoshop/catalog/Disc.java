@@ -52,6 +52,7 @@ public class Disc extends Product {
 	private String genre, image;
 	private DiscType type;
 	private String rabatt;
+	
 
 	// (｡◕‿◕｡)
 	// Jede Disc besitzt mehrere Kommentare, eine "1 zu n"-Beziehung -> @OneToMany für JPA
@@ -59,6 +60,8 @@ public class Disc extends Product {
 	// "interagiert"
 	@OneToMany(cascade = CascadeType.ALL) //
 	private List<Comment> comments = new ArrayList<>();
+	private Money price;
+	
 
 
 
@@ -68,12 +71,10 @@ public class Disc extends Product {
 	public Disc(String name, String image, Money price, String genre, DiscType type, String rabatt) {
 		
 		
-		super(name, price.subtract(price.multiply(rabattt(rabatt))));
+		super(name, price);
 		
 		
-
-		
-		
+		this.price = price;
 		this.rabatt = rabatt;
 		this.image = image;
 		this.genre = genre;
@@ -90,7 +91,17 @@ public class Disc extends Product {
 	}
 	
 	public void setRabatt(String rabatt){
-		this.rabatt = "10";
+		this.rabatt = rabatt;
+		
+		float x=0;
+		double z= 0;
+		float y = Float.parseFloat(rabatt);
+		
+		
+		x= (float) (Math.round((y/100) * 100) / 100.0);
+		
+		
+		this.price = price.subtract(price.multiply(x));
 	}
 
 	private static void add(String rabatt2) {
@@ -105,6 +116,10 @@ public class Disc extends Product {
 	// Deswegen geben auch so viele Salespoint Klassen nur Iterable<T> zurück ;)
 	public Iterable<Comment> getComments() {
 		return comments;
+	}
+	
+	public Money getPrice() {
+		return price;
 	}
 
 	public String getImage() {

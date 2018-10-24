@@ -26,11 +26,13 @@ import javax.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 import org.salespointframework.inventory.Inventory;
 import org.salespointframework.inventory.InventoryItem;
+import org.salespointframework.order.Cart;
 import org.salespointframework.quantity.Quantity;
 import org.salespointframework.time.BusinessTime;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -90,6 +92,7 @@ class CatalogController {
 	// deswegen wird die update-Methode aufgerufen
 	@PostMapping("/disc/{disc}/comments")
 	public String comment(@PathVariable Disc disc, @Valid CommentAndRating payload) {
+		
 
 		disc.addComment(payload.toComment(businessTime.getTime()));
 		catalog.save(disc);
@@ -97,11 +100,11 @@ class CatalogController {
 		return "redirect:/disc/" + disc.getId();
 	}
 	
-	
 	@PostMapping("/disc/{disc}")
-	String Raba(@PathVariable Disc disc, @RequestParam("number") String rabatt) {
-		
-		disc.setRabatt(rabatt);
+	String addDisc(@RequestParam("pid") Disc disc, @RequestParam("number") int rabatt) {
+
+		String ggg = Integer.toString(rabatt);
+		disc.setRabatt(ggg);
 		catalog.save(disc);
 		
 		return "redirect:/disc/" + disc.getId();

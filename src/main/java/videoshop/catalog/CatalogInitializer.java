@@ -59,7 +59,7 @@ class CatalogInitializer implements DataInitializer {
 		}
 		
 
-		videoCatalog.save(new Disc("Last Action Hero", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "10"));
+		videoCatalog.save(new Disc("Last Action Hero", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0"));
 		videoCatalog.save(new Disc("Back to the Future", "bttf", Money.of(9.99, EURO), "Sci-Fi", DiscType.DVD, "0"));
 		videoCatalog.save(new Disc("Fido", "fido", Money.of(9.99, EURO), "Comedy/Drama/Horror", DiscType.DVD, "0"));
 		videoCatalog.save(new Disc("Super Fuzz", "sf", Money.of(9.99, EURO), "Action/Sci-Fi/Comedy", DiscType.DVD, "0"));

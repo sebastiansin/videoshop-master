@@ -27,21 +27,14 @@
         <tr>
             <th th:text="#{cart.movieTitle}">Titel</th>
             <th th:text="#{cart.count}">Anzahl</th>
-            <th th:text="Preis">9000</th>
-          	<th th:text="momentanRabatt">9000</th>
-            <th th:text="Rabatt">9000</th>
+
                     </tr>
         </thead>
         <tbody th:remove="all-but-first">
         <tr th:each=" item : ${stock}">
             <td th:text="${item.product.name}">Last Action Hero</td>
             <td th:text="${{item.quantity}}">9000</td>
-            <td th:text="${item.product.price}">9000</td> 
-            <td th:text="${item.product.raba}">9000</td>          
-            <td class="field" >
-            	<input id="number" type="number" name="number" min="0" max="5" step="1" value="0"/><br/>
-            
-            <button onclick="myFunction()">Rabatt erstellen</button>
+ 
             </td>
           
         </tr>
