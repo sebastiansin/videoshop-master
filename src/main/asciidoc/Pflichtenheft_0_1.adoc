@@ -146,12 +146,12 @@ Muss-Kriterien
 	o Mitarbeiter
 	o Administrator (Chef)
 - Verwaltung von Datensätzen
-	o Personal bzw Kundenkonten
+	o Personal bzw. Kundenkonten
 	o Bestellungen von Artikeln
 	o Lagerbestand
 	o Rabatt Erstellung
-	o Mindesbestand erstellen
-- Übersicht der Datensaätze
+	o Mindestbestand erstellen
+- Übersicht der Datensätze
 - Erstellung von Statistiken
 	o Verkauf
 	o Umsatz
@@ -160,7 +160,7 @@ Muss-Kriterien
 - Nach betätigter Bestellung Rechnung erstellen
 - Aktionsset und Aktionflyer Erstellung
 - Verwaltung der Tierpension
-	o Übersicht der vorhanden Tiere
+	o Übersicht der vorhandenen Tiere
 	o Kunde kann Tiere anmelden
 
 	
@@ -170,11 +170,11 @@ Muss-Kriterien
 
 Kann-Kriterien
 ~~~~~~~~~~~~~~
-Erstellungen von Tabellen zur Visualisierung der Statistiken.
+ -  von Tabellen zur Visualisierung der Statistiken.
 
 Nicht-Funktionale Anforderungen
 -------------------------------
-- Keine Möglichkeit eines Warenwirtschaftsystem
+- Keine Möglichkeit eines Warenwirtschaftssystem
 
 
 Qualitätsziele
