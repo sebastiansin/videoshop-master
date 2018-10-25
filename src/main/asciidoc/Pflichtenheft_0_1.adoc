@@ -17,13 +17,17 @@ Status: _in Bearbeitung_
 Stand: _20. Oktober 2018_
 
 
-:toc: 
-:toclevels: 3 
-:toc-title: Inhaltsverzeichnis 
-:toc-placement!: 
-:sectanchors: 
+:author: Marc Kandler
+:revnumber: 0.1
+:revdate: {docdatetime}
+:revremark: Work in Progress
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
 :numbered:
-toc::[]
+
+:company_name: Chair of Software Technology
 
 
 == Zusammenfassung
