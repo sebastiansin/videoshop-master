@@ -142,7 +142,7 @@ Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden di
 |​Nutzer | Nicht Registrierte Personen die den Shop besuchen, kann nur Artikel ansehen.
 |​Kunde | Registrierte Personen die Artikel kaufen und Tiere zur Pension anmelden kann, interagiert mit dem System.
 |Mitarbeiter | Registrierter Nutzer überprüft Bestellungen von Kunden und verwaltet die Artikel.
-|Chef (Admin) | Registrierter Nutzer mit Administrationsrechten zu Erstellung und Bearbeitungeitung der Artikel und Bearbeitung von Mitarbeiter Accounts.
+|Chef (Admin) | Registrierter Nutzer mit Administrationsrechten zu Erstellung und Bearbeitung der Artikel und Bearbeitung von Mitarbeiter Accounts.
 |==============
 
 === Überblick Anwendungsfalldiagramm
