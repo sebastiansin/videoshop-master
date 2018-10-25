@@ -1,8 +1,7 @@
 
 
 = Pflichtenheft Zoohandlung
-:author: Marc Kandler
-:revnumber: 0.1
+
 :revdate: {docdatetime}
 :revremark: Work in Progress
 :doctype: book
@@ -193,7 +192,7 @@ Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden di
 
 
 === Qualitätsziele
-Die folgende Tabelle zeigt welche Qualitätsziele in diesem Projekt verlogt wurden.
+Die folgende Tabelle zeigt welche Qualitätsziele in diesem Projekt verfolgt wurden.
 
 
 1 Unwichtig .. 4 sehr Wichtig
