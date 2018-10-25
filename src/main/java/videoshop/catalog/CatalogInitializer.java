@@ -60,14 +60,14 @@ class CatalogInitializer implements DataInitializer {
 		
 
 		videoCatalog.save(new Disc("Last Action Hero", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
-		videoCatalog.save(new Disc("Back to the Future", "bttf", Money.of(9.99, EURO), "Sci-Fi", DiscType.DVD, "0", Money.of(50, EURO)));
-		videoCatalog.save(new Disc("Fido", "fido", Money.of(9.99, EURO), "Comedy/Drama/Horror", DiscType.DVD, "0", Money.of(50, EURO)));
-		videoCatalog.save(new Disc("Super Fuzz", "sf", Money.of(9.99, EURO), "Action/Sci-Fi/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
+		videoCatalog.save(new Disc("Back to the Future", "bttf", Money.of(9.99, EURO), "Sci-Fi", DiscType.DVD, "0", Money.of(9.99, EURO)));
+		videoCatalog.save(new Disc("Fido", "fido", Money.of(9.99, EURO), "Comedy/Drama/Horror", DiscType.DVD, "0", Money.of(9.99, EURO)));
+		videoCatalog.save(new Disc("Super Fuzz", "sf", Money.of(9.99, EURO), "Action/Sci-Fi/Comedy", DiscType.DVD, "0", Money.of(9.99, EURO)));
 		videoCatalog.save(new Disc("Armour of God II: Operation Condor", "aog2oc", Money.of(14.99, EURO),
-				"Action/Adventure/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
-		videoCatalog.save(new Disc("Persepolis", "pers", Money.of(14.99, EURO), "Animation/Biography/Drama", DiscType.DVD, "0", Money.of(50, EURO)));
+				"Action/Adventure/Comedy", DiscType.DVD, "0", Money.of(14.99, EURO)));
+		videoCatalog.save(new Disc("Persepolis", "pers", Money.of(14.99, EURO), "Animation/Biography/Drama", DiscType.DVD, "0", Money.of(14.99, EURO)));
 		videoCatalog
-				.save(new Disc("Hot Shots! Part Deux", "hspd", Money.of(9999.0, EURO), "Action/Comedy/War", DiscType.DVD, "0", Money.of(50, EURO)));
+				.save(new Disc("Hot Shots! Part Deux", "hspd", Money.of(9999.0, EURO), "Action/Comedy/War", DiscType.DVD, "0", Money.of(9999.0, EURO)));
 		videoCatalog.save(new Disc("Avatar: The Last Airbender", "tla", Money.of(19.99, EURO), "Animation/Action/Adventure",
 				DiscType.DVD, "0", Money.of(50, EURO)));
 

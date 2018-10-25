@@ -75,6 +75,8 @@ public class Disc extends Product {
 		
 		super(name, pricee );
 		
+		pricee = price;
+		
 		this.price = price;
 		this.pricee = pricee;
 		this.rabatt = rabatt;
@@ -98,8 +100,6 @@ public class Disc extends Product {
 		float x=0;
 		float y = Float.parseFloat(rabatt);
 		
-		
-		//x= (float) (Math.round((y/100) * 100) / 100.0);
 		x= y/100;
 		
 		this.price = pricee.subtract(pricee.multiply(x));
