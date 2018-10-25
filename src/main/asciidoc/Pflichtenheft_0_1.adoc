@@ -16,6 +16,10 @@ Status: _in Bearbeitung_
 
 Stand: _20. Oktober 2018_
 
+
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
 :toc: left
 :numbered:
 
