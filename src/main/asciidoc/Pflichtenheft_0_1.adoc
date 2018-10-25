@@ -1,6 +1,6 @@
 
 
-Pflichtenheft
+= Pflichtenheft Zoohandlung
 
 Zoohandlung
 
@@ -15,6 +15,9 @@ Version: _0.1_
 Status: _in Bearbeitung_
 
 Stand: _20. Oktober 2018_
+
+:toc: left
+:numbered:
 
 == Zusammenfassung
 
