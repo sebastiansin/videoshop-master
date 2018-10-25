@@ -142,26 +142,26 @@ Funktionale Anforderungen
 Muss-Kriterien
 ~~~~~~~~~~~~~~
 - Accounts mit Rollen für die Verwaltungsbereiche festlegen
-	o Kunde
-	o Mitarbeiter
-	o Administrator (Chef)
+	* Kunde
+	* Mitarbeiter
+	* Administrator (Chef)
 - Verwaltung von Datensätzen
-	o Personal bzw. Kundenkonten
-	o Bestellungen von Artikeln
-	o Lagerbestand
-	o Rabatt Erstellung
-	o Mindestbestand erstellen
+	* Personal bzw. Kundenkonten
+	* Bestellungen von Artikeln
+	* Lagerbestand
+	* Rabatt Erstellung
+	* Mindestbestand erstellen
 - Übersicht der Datensätze
 - Erstellung von Statistiken
-	o Verkauf
-	o Umsatz
-	o Kosten
+	* Verkauf
+	* Umsatz
+	* Kosten
 - Mitarbeiter kann Waren nachbestellen
 - Nach betätigter Bestellung Rechnung erstellen
 - Aktionsset und Aktionflyer Erstellung
 - Verwaltung der Tierpension
-	o Übersicht der vorhandenen Tiere
-	o Kunde kann Tiere anmelden
+	* Übersicht der vorhandenen Tiere
+	* Kunde kann Tiere anmelden
 
 	
 
@@ -188,7 +188,7 @@ Qualitätsziele
 |Zuverlässigkeit        	|   |   | x |   
 |Korrektheit            	|   |   | x  |   
 |Benutzerfreundlichkeit     |   |   |  |  x 
-|Erweiterbarkeit            |  x |   |   |  
+|Erweiterbarkeit            |   | x  |   |  
 |Leistungsfähigkeit         |   |  x |   | 
 |Wartbarkeit  				|	|	| x	|
 |===
