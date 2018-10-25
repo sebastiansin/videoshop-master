@@ -1,10 +1,10 @@
 
 
 = Pflichtenheft Zoohandlung
-:author: Marc Kandler
-:revnumber: 0.1
-:revdate: {docdatetime}
-:revremark: Work in Progress
+
+
+
+
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
@@ -13,7 +13,7 @@
 
 :company_name: Chair of Software Technology
 
-Zoohandlung
+
 
 Gruppe 44: Kevin Santruschek, Kevin
 
@@ -195,10 +195,10 @@ Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden di
 === Qualitätsziele
 
 
-
+1 Unwichtig .. 4 sehr Wichtig
 [options="header", cols="3h, ^1, ^1, ^1, ^1"]
 |===
-|           | Unwichtig | Weniger wichtig | wichtig | Sehr wichtig 
+|           | 1 | 2 | 3 | 4 
 |Robustheit          		|   |   |   | x 
 |Zuverlässigkeit        	|   |   | x |   
 |Korrektheit            	|   |   | x  |   
