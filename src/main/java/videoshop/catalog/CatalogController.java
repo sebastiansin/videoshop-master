@@ -103,9 +103,9 @@ class CatalogController {
 	@PostMapping("/disc/{disc}")
 	String addDisc(@RequestParam("pid") Disc disc, @RequestParam("number") int rabatt) {
 		
-		//int raba = rabatt <= 0 || rabatt > 100 ? 0 : rabatt;
+		int raba = rabatt <= 0 || rabatt > 100 ? 0 : rabatt;
 		
-		String ggg = Integer.toString(rabatt);
+		String ggg = Integer.toString(raba);
 		disc.setRabatt(ggg);
 		catalog.save(disc);
 		
