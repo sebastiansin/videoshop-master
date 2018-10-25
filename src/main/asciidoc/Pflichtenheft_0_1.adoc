@@ -22,6 +22,7 @@ Stand: _20. Oktober 2018_
 :source-highlighter: highlightjs
 :toc: left
 :numbered:
+toc::[]
 
 == Zusammenfassung
 
