@@ -1,7 +1,8 @@
 
 
 = Pflichtenheft Zoohandlung
-
+:author: 
+:revnumber: 0.1
 :revdate: {docdatetime}
 :revremark: Work in Progress
 :doctype: book
