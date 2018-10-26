@@ -163,7 +163,7 @@ image::.\images\UseCaseDia.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "An
 [[UC0020]]
 |===
 |Name                       |Register
-|Description                |An unauthenticated user shall be able to create an account for himself.
+|Beschreibung               |An unauthenticated user shall be able to create an account for himself.
 |Akteure                     |Unauthenticated User
 |Trigger                    |Unauthenticated user wants to create an account for himself by pressing "Registrieren"
 |Voraussetzung           a|Actor is not logged in (authenticated) yet
