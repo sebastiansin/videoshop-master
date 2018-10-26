@@ -6,6 +6,7 @@
 :revnumber: 0.1
 :toc: left
 :numbered:
+:toc-title: Inhaltsverzeichnis
 
 
 
