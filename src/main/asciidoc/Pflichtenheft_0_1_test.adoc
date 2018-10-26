@@ -216,7 +216,7 @@ Die folgenden Bilder sollen zeigen wie der Webshop aussehen soll.
 ===  Überblick: Dialogkarte
 
 [[startseite_image]]
-image::.\images\Dialog-Landkarte.pmg[Landing page, 100%, 100%, pdfwidth=100%, title= "Dialoglandkarte", align=center]
+image::.\images\Dialog-Landkarte.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Dialoglandkarte", align=center]
 
 === Dialogbeschreibung
 
