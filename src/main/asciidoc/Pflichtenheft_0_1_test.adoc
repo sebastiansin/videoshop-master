@@ -4,7 +4,8 @@
 :toc:
 :author:
 :revnumber: 0.1
-
+:toc: left
+:numbered:
 
 
 
