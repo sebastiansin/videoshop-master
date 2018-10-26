@@ -1,15 +1,9 @@
 
 :project_name: Zoohandlung
 = Pflichtenheft __{project_name}__
-
+:toc:
+:author:
 :revnumber: 0.1
-:revdate: {docdatetime}
-:revremark: Work in Progress
-:doctype: book
-:icons: font
-:source-highlighter: highlightjs
-:toc: left
-:numbered:
 
 
 
