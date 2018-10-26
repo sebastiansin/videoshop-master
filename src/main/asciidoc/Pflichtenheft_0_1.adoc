@@ -1,6 +1,6 @@
 
-
-= Pflichtenheft Zoohandlung
+:project_name: Zoohandlung
+= Pflichtenheft __{project_name}__
 :author: 
 :revnumber: 0.1
 :revdate: {docdatetime}
@@ -11,7 +11,7 @@
 :toc: left
 :numbered:
 
-:company_name: Chair of Software Technology
+
 
 
 
