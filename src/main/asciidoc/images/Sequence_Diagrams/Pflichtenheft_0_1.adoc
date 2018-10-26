@@ -1,7 +1,7 @@
 
 :project_name: Zoohandlung
 = Pflichtenheft __{project_name}__
-
+:author: 
 :revnumber: 0.1
 :revdate: {docdatetime}
 :revremark: Work in Progress
@@ -29,7 +29,7 @@ Stand: _20. Oktober 2018_
 
 
 
-:toc: []
+
 
 == Zusammenfassung
 
@@ -45,7 +45,9 @@ Statistiken.
 
 [cols=",,,,",]
 |=================================================
-|0.1 |In Arbeit |20.10.18 |Autor |Initiale Version
+|0.1 |In Arbeit |20.10.18 |Sebastian Singer |Initiale Version
+|0.2 |In Arbeit |24.10.18|Sebastian Singer| Erweitert
+|0.3 |In Arbeit |26.10.18|Sebastian Singer| Diagramme angefügt
 |=================================================
 
 == Aufgabenstellung und Zielsetzung
@@ -128,7 +130,7 @@ Kann-Kriterien vor.
 Das Kontextmodell bietet die möglichkeit die groben System-Komponenten darzustellen.
 
 [[startseite_image]]
-image::.\images\Kontextdiagramm.png[Landing page, 60%, 60%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
+image::.\models\analysis\Kontextdiagramm.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
 
 
 === Top-Level-Architektur
@@ -136,10 +138,8 @@ image::.\images\Kontextdiagramm.png[Landing page, 60%, 60%, pdfwidth=100%, title
 Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden die groben System-Komponenten weiter detailiert.
 
 [[startseite_image]]
-image::.\images\Top-Level-Architektur.png[Landing page, 60%, 60%, pdfwidth=100%, title= "Top-Level-Architektur", align=center]
+image::.\models\analysis\Top-Level-Architektur.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "Top-Level-Architektur", align=center]
 
-
-== Anwendungsfälle
 
 
 === Akteure
@@ -156,23 +156,21 @@ image::.\images\Top-Level-Architektur.png[Landing page, 60%, 60%, pdfwidth=100%,
 === Überblick Anwendungsfalldiagramm
 
 [[startseite_image]]
-image::.\images\UseCaseDia.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "Anwendungsfalldiagramm", align=center]
+image::.\models\analysis\UseCa.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "Anwendungsfalldiagramm", align=center]
+
 
 === Anwendungsfallbeschreibung
+
 [cols="1h, 3"]
 [[UC0020]]
 |===
-|Name                       |Register
-|Beschreibung               |An unauthenticated user shall be able to create an account for himself.
-|Akteure                     |Unauthenticated User
-|Trigger                    |Unauthenticated user wants to create an account for himself by pressing "Registrieren"
-|Voraussetzung           a|Actor is not logged in (authenticated) yet
+|Name                       |
+|Beschreibung               |
+|Akteure                     |
+|Trigger                    |
+|Voraussetzung           a|
 |Essenzielle Schritte           a|
-1.  Unauthenticated user presses "Registrieren"
-2.  He enters his desired username, password, and delivery address
-3.  System checks username uniqueness
-  . If Unique: An account is created with the provided data
-  . Otherwise: An error message is shown
+
 
 |===
 
@@ -237,12 +235,15 @@ Die folgende Tabelle zeigt welche Qualitätsziele in diesem Projekt verfolgt wur
 
 == GUI Prototyp
 
-Die folgenden Bilder sollen zeigen wie der Webshop aussehen soll.
+Im Folgenden Bereich wird gezeigt wie das GUI-System aufgebaut ist.
 
 ===  Überblick: Dialogkarte
+[[startseite_image]]
+image::.\models\analysis\Dialog-Landkarte.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Dialoglandkarte", align=center]
 
-[[landkarte_image]]
-image::.\images\Dialog-Landkarte.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Dialoglandkarte", align=center]
+
+
+
 
 === Dialogbeschreibung
 
