@@ -128,7 +128,7 @@ Kann-Kriterien vor.
 Das Kontextmodell bietet die möglichkeit die groben System-Komponenten darzustellen.
 
 [[startseite_image]]
-image::.\images\Kontextdiagramm.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
+image::.\images\Kontextdiagramm.png[Landing page, 80%, 80%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
 
 
 === Top-Level-Architektur
