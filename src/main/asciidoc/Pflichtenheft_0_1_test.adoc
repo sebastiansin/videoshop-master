@@ -164,17 +164,16 @@ image::.\images\UseCaseDia.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "An
 |===
 |Name                       |Register
 |Description                |An unauthenticated user shall be able to create an account for himself.
-|Actors                     |Unauthenticated User
+|Akteure                     |Unauthenticated User
 |Trigger                    |Unauthenticated user wants to create an account for himself by pressing "Registrieren"
-|Precondition(s)           a|Actor is not logged in (authenticated) yet
-|Essential Steps           a|
+|Voraussetzung           a|Actor is not logged in (authenticated) yet
+|Essenzielle Schritte           a|
 1.  Unauthenticated user presses "Registrieren"
 2.  He enters his desired username, password, and delivery address
 3.  System checks username uniqueness
   . If Unique: An account is created with the provided data
   . Otherwise: An error message is shown
-|Extensions                 |-
-|Functional Requirements    |<<F0020>>, <<F0021>>
+
 |===
 
 == Funktionale Anforderungen
