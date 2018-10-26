@@ -156,7 +156,7 @@ image::.\images\Top-Level-Architektur.png[Landing page, 60%, 60%, pdfwidth=100%,
 === Überblick Anwendungsfalldiagramm
 
 [[startseite_image]]
-image::.\images\UseCaseDia.png[Landing page, 60%, 60%, pdfwidth=100%, title= "Anwendungsfalldiagramm", align=center]
+image::.\images\UseCaseDia.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "Anwendungsfalldiagramm", align=center]
 
 === Anwendungsfallbeschreibung
 [cols="1h, 3"]
