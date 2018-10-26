@@ -136,7 +136,7 @@ image::.\images\Kontextdiagramm.png[Landing page, 80%, 80%, pdfwidth=100%, title
 Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden die groben System-Komponenten weiter detailiert.
 
 [[startseite_image]]
-image::.\images\Top-Level-Architektur.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Top-Level-Architektur", align=center]
+image::.\images\Top-Level-Architektur.png[Landing page, 60%, 60%, pdfwidth=100%, title= "Top-Level-Architektur", align=center]
 
 
 == Anwendungsfälle
