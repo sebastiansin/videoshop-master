@@ -127,9 +127,17 @@ Kann-Kriterien vor.
 
 Das Kontextmodell bietet die möglichkeit die groben System-Komponenten darzustellen.
 
+[[startseite_image]]
+image::.\images\Kontextdiagramm.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
+
+
 === Top-Level-Architektur
 
 Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden die groben System-Komponenten weiter detailiert.
+
+[[startseite_image]]
+image::.\images\Top-Level-Architektur.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Top-Level-Architektur", align=center]
+
 
 == Anwendungsfälle
 
@@ -185,11 +193,12 @@ Die Top-Level-Architektur ist aufbauemd auf das Kontextmodell. Hierbei werden di
 
 === Kann-Kriterien
 
- -  Tabellen zur Visualisierung der Statistiken.
+ -  Tabellen zur Visualisierung der Statistiken
 
 ===  Nicht-Funktionale Anforderungen
 
 - Keine Möglichkeit eines Warenwirtschaftssystem
+- Keine Einbindung von Lieferanten
 
 
 === Qualitätsziele
@@ -215,7 +224,7 @@ Die folgenden Bilder sollen zeigen wie der Webshop aussehen soll.
 
 ===  Überblick: Dialogkarte
 
-[[startseite_image]]
+[[landkarte_image]]
 image::.\images\Dialog-Landkarte.png[Landing page, 100%, 100%, pdfwidth=100%, title= "Dialoglandkarte", align=center]
 
 === Dialogbeschreibung
