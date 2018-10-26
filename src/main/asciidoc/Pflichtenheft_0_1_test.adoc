@@ -1,13 +1,13 @@
 
 :project_name: Zoohandlung
 = Pflichtenheft __{project_name}__
-
+:toc: macro
 :author:
 :revnumber: 0.1
 :toc: left
 :numbered:
 :toc-title: Inhaltsverzeichnis
-:toc: macro
+
 
 
 
@@ -23,9 +23,9 @@ Status: _in Bearbeitung_
 
 Stand: _20. Oktober 2018_
 
+:toc:[]
 
 
-:toc: []
 
 == Zusammenfassung
 
