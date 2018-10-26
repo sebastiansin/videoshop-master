@@ -764,7 +764,7 @@ _It it not necessary to include every single desired page in the prototype, just
 
 _Note: It is pretty astonishing how close the prototype in this example already is to the final design, isn't it? ;)_
 
-[[home_image]]
+[[1. GUI Startseite (allgemein)_image]]
 image::.\GUI_digitalisiert\1. GUI Startseite (allgemein).png[Landing page, 100%, 100%, pdfwidth=100%, title= "Landing page of {project_name}", align=center]
 
 [[register_image]]
