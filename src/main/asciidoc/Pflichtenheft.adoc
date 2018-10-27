@@ -292,6 +292,15 @@ The Catalog must provide the possibility to distinguish between different types 
 [[sequence_diagram_view_catalog]]
 image::.\images\Sequence_Diagrams\View_Catalog.png[Sequence diagram: View Catalog, 100%, 100%, pdfwidth=100%, title= "Sequence diagram: View Catalog", align=center]
 
+
+
+
+
+
+
+
+
+
 [[UC0110]]
 [cols="1h, 3"]
 |===
