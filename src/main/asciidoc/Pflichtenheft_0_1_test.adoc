@@ -257,7 +257,26 @@ Das Klassendiagramm soll ein Überblick über die Domäne des System geben, die 
 
 [cols=",,",]
 |======
-|… |… |
+|Abteilung |Von der abstrakten KLasse Abteilung erben alle Abteilungen des System.  |
+|Aktionsset|Aktionsset werden aus den Artikeln der Tierhandlung erstellt und werden mit Preis bzw Aktionslaufzeit versehen. |
+|Chef |Erbt von der Mitarbeiterklasse. Der Chef ist ein Mitarbeiter mit Aministrationsrechten. Dieser hat zugriff auf alle Daten im System. |
+|Dienstleistungsabteilung |Stellt die Dienstleistungen die vorhanden sind zur Vefügung. |
+|Dienstleistung |Stellt eine Dienstleistung aus dem Sortiment dar. Diese hat einem Namen, Preis, Uhrzeit und besondere Eigenschaften. |
+|Exotisches Tier |Ein Exotisches Tier kann eine Unterschiedliche Anzahl von Zertifikaten enthalten. |
+|Futterabteilung |Steööt die Tierfutter die vorhanden sind Zurverfügung. Zusätzlich wird überprüft ob ein Tierfutter abgelaufen ist. |
+|Futter |Stellt ein Tierfutter der Zoohandlung aus dem Sortiment dar. Dieses hat einem Namen, Preis, Ablaufdatum, Menge, Futterkategorie, Tierart und besondere Eigenschaften. |
+|Kleintier |Stellt ein Tier der Zoohandlung aus dem Sortiment dar. Dieses hat einem Namen, Preis, Futter, Futtermenge, Menge, Unterkategorie, Tierart und besondere Eigenschaften. |
+|Kunde |Erbt von Personenklasse und stellt die Kundschafft der Zoohandlung dar. Kunden können Artikel kaufen und Tiere für die Tierpension anmelden. |
+|Mitarbeiter |Erbt von der Personenklasse und stellt einen Mitarbeiter der Zoohandlung dar. Zusätzlich haben Mitarbeiter weitere Berechtigungen. |
+|Nutzer |Von der abstrakten Personenklasse erben alle Nutzer des Systems. Sie stellt allgemeine Eigenschaften zu einer Person. |
+|Statistik |Dient zur Erstllung von Statistiken aus der Tierhandlung. Statistiken behinhalten eine Gewinn und Verlust Analyse, sowie Einahmen und Ausgabe.|
+|Tierhandlung |Dient zu verwaltung der Zoohandlung. |
+|Tierpension |Dient zur Verwaltung der Tierpension. Hier werden die Daten zu Belegung, neue Anmeldung und Tier entlassung Dargestellt. |
+|Tierpflegeauftrag |Der Kunde kann mehrer Tiere zur Pension anlegen. |
+|Tierabteilung|Stellt die Tierarten die vorhanden sind zur Vefügung. |
+|Zubehörabteilung |Stellt die Zubehörartikel die vorhanden sind zur Vefügung. |
+|Zubehör |Stellt ein Zubehör der Zoohandlung aus dem Sortiment dar. Dieses hat einem Namen, Preis, Ablaufdatum, Menge, Unterkategorie, Tierart und besondere Eigenschaften. |
+|Zertifikat |Der Kunde kann ein Zertifakt hinterlegen |
 |======
 
 
