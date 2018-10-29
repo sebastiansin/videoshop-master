@@ -2,9 +2,10 @@
 :project_name: Zoohandlung
 = Pflichtenheft __{project_name}__
 :author:
-:toc: macro
 :revnumber: 0.1
-:toc: left
+:toc:
+:toc:levels: 3
+:toc-placement!:
 :numbered:
 :toc-title: Inhaltsverzeichnis
 
