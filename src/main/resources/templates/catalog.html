@@ -26,7 +26,7 @@
         <div class="ui card" th:each="disc : ${catalog}">
             <div class="content">
                 <a class="header" th:href="@{/disc/{id}(id=${disc.id})}" th:text="${disc.name}">Last AAction Hero</a>
-                <p> aktueller Rabatt:</p> <span th:text="${disc.rabatt}" >Rabatt</span>  
+                <p> aktueller Rabatt: <span th:text="${disc.rabatt}" >Rabatt</span>  &#037; </p>  
             </div>
             <div class="image">
                 <a th:href="@{/disc/{id}(id=${disc.id})}">
