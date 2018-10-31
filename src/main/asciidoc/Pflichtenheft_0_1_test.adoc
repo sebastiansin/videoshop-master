@@ -306,7 +306,7 @@ Das Klassendiagramm soll ein Überblick über die Domäne des System geben, die 
 === Klassen und Enumerationen
 
 
-[cols=",,",]
+[cols=",,"]
 |======
 |Abteilung |Von der abstrakten KLasse Abteilung erben alle Abteilungen des System.  |
 |Aktionsset|Aktionsset werden aus den Artikeln der Tierhandlung erstellt und werden mit Preis bzw Aktionslaufzeit versehen. |
