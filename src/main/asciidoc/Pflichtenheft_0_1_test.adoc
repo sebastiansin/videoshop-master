@@ -212,49 +212,41 @@ a|
 Wenn eine Mindestmenge von einem Artikel unterschritten wird. Soll eine Bestellung des Artikels vom Mitarbeiter vorgenommen werden.
 
 |[[F0030]]<<F0030>>
-
 |Artikel
 a|
 Eine Bearbeitung der Artikel soll möglich sein. Dies bedeutet das Mindestmengen, Preis und Name verändert werden können.
 
 |[[F0040]]<<F0040>>
-
 |Rabatt
 a|
 Eine Möglichkeit für eine Rabatterstellung auf einzelne Produkte soll bereit gestellt werden.
 
 |[[F0050]]<<F0050>>
-|v0.1
 |Übersicht an Datensätzen
 a|
 
 
 |[[F0060]]<<F0060>>
-
 |Erstellung von Statistiken
 a|
 Der Administrator soll Statistiken über die Zoohandlung einsehen können. Diese Beinhaltet Bilanzen über Gewinn und Verlust sowie Umsatz und Verlust.
 
 |[[F0070]]<<F0070>>
-
 |Rechnungserstellung
 a|
 Nach einer Bestellung soll eine Rechnung mit Dataum, Artikel, Menge und ausgewiesen Preis erstellt werden.
 
 |[[F0080]]<<F0080>>
-
 |Aktionsset und Aktionsflyer
 a|
 Der Mitarbeiter kann Aktionsset und Aktionsflyer erstellen. Über Artikel die im Shop vorhanden sind kann er Artikel Makieren und mit eine Rabatt versehen, dieser Rabatt wird mit dem Gesamtpreis der Artikel verrechnet. Über das System wird darauß ein Aktionsflyer.
 
 |[[F0090]]<<F0090>>
-
 |Anmeldung Tierpension
 a|
 Der Kunde kann sein Tier zur Tierpension anmelden und abgegen. Bei der Anmeldung wird geprüft ob ein freier Platz vorhanden ist. Wenn die Anmeldung im Voraus ist, soll ein Rabatt gewährt werden.
 
 |[[F0100]]<<F0100>>
-|v0.1
 |Verwaltung Tierpension
 a|
 Es soll eine Übersicht der Tiere geben die im Moment in der Pension sind. Eine Benachrichtigung wenn ein Kunde ein verlängerten aufenhalt für sein Tier wünscht.
