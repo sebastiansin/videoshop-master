@@ -179,29 +179,92 @@ image::.\images\UseCaseDia.jpg[Landing page, 60%, 60%, pdfwidth=100%, title= "An
 
 === Muss-Kriterien
 
-- Accounts mit Rollen für die Verwaltungsbereiche festlegen
-	* Kunde
-	* Mitarbeiter
-	* Administrator (Chef)
-- Verwaltung von Datensätzen
-	* Personal bzw. Kundenkonten
-	* Bestellungen von Artikeln
-	* Lagerbestand
-	* Rabatt Erstellung
-	* Mindestbestand erstellen
-- Übersicht der Datensätze
-- Erstellung von Statistiken
-	* Verkauf
-	* Umsatz
-	* Kosten
-- Mitarbeiter kann Waren nachbestellen
-- Nach betätigter Bestellung Rechnung erstellen
-- Aktionsset und Aktionflyer Erstellung
-- Verwaltung der Tierpension
-	* Übersicht der vorhandenen Tiere
-	* Kunde kann Tiere anmelden
+[options="header", cols="2h, 1, 3, 12"]
+|===
+|ID
 
-	
+|Name
+|Beschreibung
+
+|[[F0010]]<<F0010>>
+
+|Accountverwaltung
+a|
+Über eine Accountverwaltung sollen einzelne Bereiche des System verfügbar werden. Die Accounts werden in Kunde, Mitarbeiter und Chef(Administrator) eingeteilt. Jeder Account wird durch ein Accountname und PAsswort Verifiziert.
+Jeder Besucher der Seite kann ein Account erstellen. Sobald dieser Registiriert ist erhalt er den Status Kunde, weitere Berechtigungen legt der Administrator fest.
+|[[F0020]]<<F0020>>
+
+|Registrieren
+a|
+Jeder Besucher des System kann sich Registrieren, hierbei müssen Name, Addresse, E-Mail-Adresse, Kennwort sowie Bankverbindung hinterlegt werden.
+
+|[[F0011]]<<F0011>>
+
+|Korrektheit der Registrierung
+a|
+Es soll überprüft werden das jeder Kunde nur ein Account haben darf. 
+
+|[[F0012]]<<F0012>>
+
+|Verwaltung von Konten
+a|
+Es soll möglich sein Änderungen an den Accounts vorzunehmen.
+
+|[[F0020]]<<F0020>>
+
+|Bestellung Artikel
+a|
+Wenn eine Mindestmenge von einem Artikel unterschritten wird. Soll eine Bestellung des Artikels vom Mitarbeiter vorgenommen werden.
+
+|[[F0030]]<<F0030>>
+
+|Artikel
+a|
+Eine Bearbeitung der Artikel soll möglich sein. Dies bedeutet das Mindestmengen, Preis und Name verändert werden können.
+
+|[[F0040]]<<F0040>>
+
+|Rabatt
+a|
+Eine Möglichkeit für eine Rabatterstellung auf einzelne Produkte soll bereit gestellt werden.
+
+|[[F0050]]<<F0050>>
+|v0.1
+|Übersicht an Datensätzen
+a|
+
+
+|[[F0060]]<<F0060>>
+
+|Erstellung von Statistiken
+a|
+Der Administrator soll Statistiken über die Zoohandlung einsehen können. Diese Beinhaltet Bilanzen über Gewinn und Verlust sowie Umsatz und Verlust.
+
+|[[F0070]]<<F0070>>
+
+|Rechnungserstellung
+a|
+Nach einer Bestellung soll eine Rechnung mit Dataum, Artikel, Menge und ausgewiesen Preis erstellt werden.
+
+|[[F0080]]<<F0080>>
+
+|Aktionsset und Aktionsflyer
+a|
+Der Mitarbeiter kann Aktionsset und Aktionsflyer erstellen. Über Artikel die im Shop vorhanden sind kann er Artikel Makieren und mit eine Rabatt versehen, dieser Rabatt wird mit dem Gesamtpreis der Artikel verrechnet. Über das System wird darauß ein Aktionsflyer.
+
+|[[F0090]]<<F0090>>
+
+|Anmeldung Tierpension
+a|
+Der Kunde kann sein Tier zur Tierpension anmelden und abgegen. Bei der Anmeldung wird geprüft ob ein freier Platz vorhanden ist. Wenn die Anmeldung im Voraus ist, soll ein Rabatt gewährt werden.
+
+|[[F0100]]<<F0100>>
+|v0.1
+|Verwaltung Tierpension
+a|
+Es soll eine Übersicht der Tiere geben die im Moment in der Pension sind. Eine Benachrichtigung wenn ein Kunde ein verlängerten aufenhalt für sein Tier wünscht.
+
+|===
 
 
 
