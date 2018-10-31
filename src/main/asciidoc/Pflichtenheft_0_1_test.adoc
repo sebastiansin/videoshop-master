@@ -126,7 +126,7 @@ Kann-Kriterien vor.
 Das Kontextmodell bietet die möglichkeit die groben System-Komponenten darzustellen.
 
 [[startseite_image]]
-image::.\models\analysis\GUI\GUI_digitalisiert\9. GUI Tiershop (Kundensicht).png [Landing page, 60%, 60%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
+image::.\models\analysis\GUI\GUI_digitalisiert\9 GUI Tiershop (Kundensicht).png [Landing page, 60%, 60%, pdfwidth=100%, title= "Kontextdiagramm", align=center]
 
 
 === Top-Level-Architektur
