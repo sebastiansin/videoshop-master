@@ -288,3 +288,35 @@ Begriffe erklären für normal Nutzer
 
 Offene Punkte
 -------------
+
+
+=== Dialogbeschreibung
+
+Klickt der Kunde auf „Exotische Tiere“ öffnet sich ein Katalog mit den verschiedenen Unterarten für die der Kunde 
+ein Zertifikat hochladen kann und so eines der Exemplare bestellen kann.
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\9. GUI Tiershop (Kundensicht).png  [Landing page, 100%, 100%, pdfwidth=100%, title= "Tiershop (Kundensicht)", align=center]
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\15. GUI Exotischer Tier-Shop (Kundensicht).png  [Landing page, 100%, 100%, pdfwidth=100%, title= "Exotischer Tier-Shop (Kundensicht)", align=center]
+
+Klickt ein Mitarbeiter auf seiner Startseite auf das „!“ werden ihm alle aktuellen Neuigkeiten angezeigt, darunter fallen die Fütterung von Tieren, die Prüfung 
+eines Zertifikats, die Buchung in der Tierpension oder die Abwicklung einer neuen Bestellung
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\6. GUI Startseite Mitarbeiter (nach Anmeldung).png [Landing page, 100%, 100%, pdfwidth=100%, title= "Startseite Mitarbeiter", align=center]
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\24. GUI Mitarbeiteraufgaben (Ausrufezeichen).png  [Landing page, 100%, 100%, pdfwidth=100%, title= "Mitarbeiteraufgaben", align=center]
+
+Klickt der Mitarbeiter auf das Feld „Mehr“ werden ihm im Protokoll weitere Informationen zu einem Ereignis angezeigt, im Falle eines neuen Zertifikats kann er bspw. 
+das Zertifikat sehen und es bestätigen oder ablehnen oder ihm werden genauere Details zu einer Bestellung angezeigt, sodass er diese fertigstellen kann
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\24. GUI Mitarbeiteraufgaben (Ausrufezeichen).png [Landing page, 100%, 100%, pdfwidth=100%, title= "Mitarbeiteraufgaben", align=center]
+
+Wenn der Admin auf Statistiken klickt erhält der Chef einen Überblick über die wichtigsten Statistiken die Angabe in Diagrammen ist nicht final und 
+kann im fertigen Produkt bspw. in tabellarischer Form auftreten
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\26. GUI Startseite (Admin).png  [Landing page, 100%, 100%, pdfwidth=100%, title= "Startseite (Admin)", align=center]
+
+[[startseite_image]]
+image::.\models\analysis\GUI\GUI_digitalisiert\28. GUI Statistiken Startseite.png [Landing page, 100%, 100%, pdfwidth=100%, title= "Statistiken Startseite", align=center]
+
+
