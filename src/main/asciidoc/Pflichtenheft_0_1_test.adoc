@@ -370,3 +370,23 @@ image::.\models\analysis\GUI\GUI_digitalisiert\26. GUI Startseite (Admin).png  [
 image::.\models\analysis\GUI\GUI_digitalisiert\28. GUI Statistiken Startseite.png [Landing page, 100%, 100%, pdfwidth=100%, title= "Statistiken Startseite", align=center]
 
 
+
+[cols=","]
+|======
+|Account |Konto im System 
+|Administrator|Synonym für Chef 
+|Ausloggen|Abmeldung aus dem System 
+|Bestellung |Der Einkauf eines Kunden 
+|Dienstleistung |Ein bezahlter Dienst für das Haustier, dieser kann bspw. das Waschen eines Tieres sein oder das Frisieren eines Tieres darstellen 
+|Exotische Tiere |Eher unübliche Haustiere (Schlangen, Echsen, etc.) 
+|Katalog |Eine Übersicht über die Produkte der Zoohandlung 
+|Kleintiere |Übliche Haustiere (Katze, Maus, Meerschweinchen, etc.) 
+|Nutzer |Jemand der das System benutzt, dies kann der Chef, die Mitarbeiter oder die Kunden sein 
+|Registrierung |Einen Account für die Nutzung des Systems erstellen 
+|Shop |Hier: Virtueller Einkaufsladen 
+|System |Der Oberbegriff für die gesamte Anwendung 
+|Tierpension |Abgabeort für Tiere auf bestimmte Zeit 
+|Warenkorb |Virtueller Einkaufswagen 
+|Zertifikat |Ein Schriftstück, das beweist, dass jemand ein exotisches Tier in seinem Haushalt halten darf 
+|Zoohandlung |Oberbegriff des gesamten Geschäfts 
+|======
