@@ -38,7 +38,7 @@ class CatalogInitializer implements DataInitializer {
 	
 	
 
-	private final VideoCatalog videoCatalog;
+	static VideoCatalog videoCatalog;
 
 	CatalogInitializer(VideoCatalog videoCatalog) {
 
@@ -58,7 +58,6 @@ class CatalogInitializer implements DataInitializer {
 			return;
 		}
 		
-
 		videoCatalog.save(new Disc("Last Action Hero", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
 		videoCatalog.save(new Disc("Back to the Future", "bttf", Money.of(9.99, EURO), "Sci-Fi", DiscType.DVD, "0", Money.of(9.99, EURO)));
 		videoCatalog.save(new Disc("Fido", "fido", Money.of(9.99, EURO), "Comedy/Drama/Horror", DiscType.DVD, "0", Money.of(9.99, EURO)));
@@ -84,5 +83,10 @@ class CatalogInitializer implements DataInitializer {
 		videoCatalog.save(new Disc("Oldboy", "old", Money.of(24.99, EURO), "Action/Drama/Thriller", DiscType.BLURAY, "0", Money.of(50, EURO)));
 		videoCatalog.save(new Disc("Bill & Ted's Excellent Adventure", "bt", Money.of(29.99, EURO),
 				"Adventure/Comedy/Family", DiscType.BLURAY, "0", Money.of(50, EURO)));
+		
+		
+		
+		
 	}
+
 }

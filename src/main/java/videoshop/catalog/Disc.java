@@ -15,6 +15,8 @@
  */
 package videoshop.catalog;
 
+import static org.salespointframework.core.Currencies.EURO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +27,8 @@ import javax.persistence.OneToMany;
 import org.javamoney.moneta.Money;
 import org.salespointframework.catalog.Product;
 import org.salespointframework.quantity.Metric;
+
+import videoshop.catalog.Disc.DiscType;
 
 //(｡◕‿◕｡)
 // Da der Shop DVD sowie BluRay verkaufen soll ist es sinnvoll eine gemeinsame Basisklasse zu erstellen.
@@ -131,4 +135,7 @@ public class Disc extends Product {
 	public DiscType getType() {
 		return type;
 	}
+	
+
+	
 }

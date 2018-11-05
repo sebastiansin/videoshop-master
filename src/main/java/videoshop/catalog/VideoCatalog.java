@@ -17,6 +17,9 @@ package videoshop.catalog;
 
 import videoshop.catalog.Disc.DiscType;
 
+import static org.salespointframework.core.Currencies.EURO;
+
+import org.javamoney.moneta.Money;
 import org.salespointframework.catalog.Catalog;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
@@ -49,4 +52,6 @@ public interface VideoCatalog extends Catalog<Disc> {
 	default Iterable<Disc> findByType(DiscType type) {
 		return findByType(type, DEFAULT_SORT);
 	}
+	
+
 }

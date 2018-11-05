@@ -17,6 +17,8 @@ package videoshop.catalog;
 
 import videoshop.catalog.Disc.DiscType;
 
+import static org.salespointframework.core.Currencies.EURO;
+import org.salespointframework.catalog.Catalog;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -24,6 +26,7 @@ import javax.validation.Valid;
 
 import javax.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
+import org.javamoney.moneta.Money;
 import org.salespointframework.inventory.Inventory;
 import org.salespointframework.inventory.InventoryItem;
 import org.salespointframework.order.Cart;
@@ -101,7 +104,8 @@ class CatalogController {
 	}
 	
 	@PostMapping("/disc/{disc}")
-	String addDisc(@RequestParam("pid") Disc disc, @RequestParam("number") int rabatt) {
+	String addRabatt(@RequestParam("pid") Disc disc, @RequestParam("number") int rabatt) {
+		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
 		
 		int raba = rabatt <= 0 || rabatt > 100 ? 0 : rabatt;
 		
@@ -112,6 +116,16 @@ class CatalogController {
 		return "redirect:/disc/" + disc.getId();
 	}
 	
+	@PostMapping("/stock")
+	String addDisc(@RequestParam("name") String name, @RequestParam("image") String image, @RequestParam("money") int price, @RequestParam("rabatt") String rabatt) {
+	
+		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
+		//catalog.save( new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
+		//catalog.save(new Disc(name, image, Money.of(price, EURO), name, DiscType.DVD, rabatt, Money.of(price, EURO)));
+		//catalog.save( new disc);
+		
+		return "stock";
+	}
 
 	/**
 	 * Describes the payload to be expected to add a comment.
