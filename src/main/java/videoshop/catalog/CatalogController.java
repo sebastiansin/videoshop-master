@@ -21,6 +21,7 @@ import static org.salespointframework.core.Currencies.EURO;
 import org.salespointframework.catalog.Catalog;
 import java.time.LocalDateTime;
 import java.util.Optional;
+import videoshop.inventory.*;
 
 import javax.validation.Valid;
 
@@ -105,25 +106,26 @@ class CatalogController {
 	
 	@PostMapping("/disc/{disc}")
 	String addRabatt(@RequestParam("pid") Disc disc, @RequestParam("number") int rabatt) {
-		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
+		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, 0, Money.of(50, EURO)));
 		
 		int raba = rabatt <= 0 || rabatt > 100 ? 0 : rabatt;
 		
-		String ggg = Integer.toString(raba);
-		disc.setRabatt(ggg);
+		disc.setRabatt(raba);
 		catalog.save(disc);
+		
+		
 		
 		return "redirect:/disc/" + disc.getId();
 	}
 	
 	@PostMapping("/stock")
-	String addDisc(@RequestParam("name") String name, @RequestParam("image") String image, @RequestParam("money") int price, @RequestParam("rabatt") String rabatt) {
+	String addDisc(Disc disc, @RequestParam("name") String name, @RequestParam("image") String image, @RequestParam("money") int price, @RequestParam("rabatt") String rabatt) {
 	
-		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
+		catalog.save(new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, 0, Money.of(50, EURO)));
 		//catalog.save( new Disc("Last Action Hero2", "lac", Money.of(50, EURO), "Äktschn/Comedy", DiscType.DVD, "0", Money.of(50, EURO)));
 		//catalog.save(new Disc(name, image, Money.of(price, EURO), name, DiscType.DVD, rabatt, Money.of(price, EURO)));
 		//catalog.save( new disc);
-		
+		catalog.save(disc);
 		return "stock";
 	}
 

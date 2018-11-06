@@ -55,7 +55,7 @@ public class Disc extends Product {
 	// primitve Typen oder Strings müssen nicht extra für JPA annotiert werden
 	private String genre, image;
 	private DiscType type;
-	private String rabatt;
+	private int rabatt;
 	
 
 	// (｡◕‿◕｡)
@@ -74,7 +74,7 @@ public class Disc extends Product {
 	@SuppressWarnings("unused")
 	private Disc() {}
 
-	public Disc(String name, String image, Money price, String genre, DiscType type, String rabatt, Money pricee) {
+	public Disc(String name, String image, Money price, String genre, DiscType type, int rabatt, Money pricee) {
 		
 		
 		super(name, pricee );
@@ -83,7 +83,7 @@ public class Disc extends Product {
 		
 		this.price = price;
 		this.pricee = pricee;
-		this.rabatt = rabatt;
+		this.setRabatt(rabatt);
 		this.image = image;
 		this.genre = genre;
 		this.type = type;
@@ -98,6 +98,7 @@ public class Disc extends Product {
 		
 	}
 	
+	/*
 	public void setRabatt(String rabatt){
 		this.rabatt = rabatt;
 		
@@ -108,7 +109,7 @@ public class Disc extends Product {
 		
 		this.price = pricee.subtract(pricee.multiply(x));
 	}
-
+*/
 
 
 	// (｡◕‿◕｡)
@@ -127,13 +128,22 @@ public class Disc extends Product {
 	public String getImage() {
 		return image;
 	}
-	
+	/*
 	public String getRabatt() {
 		return rabatt;
 	}
+	*/
 
 	public DiscType getType() {
 		return type;
+	}
+
+	public int getRabatt() {
+		return rabatt;
+	}
+
+	public void setRabatt(int rabatt) {
+		this.rabatt = rabatt;
 	}
 	
 
