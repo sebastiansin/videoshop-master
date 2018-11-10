@@ -35,6 +35,14 @@ interface RegistrationForm {
 	@NotEmpty(message = "{RegistrationForm.password.NotEmpty}") //
 	String getPassword();
 
+	@NotEmpty(message = "{RegistrationForm.zweiter.NotEmpty}") //
+	String getZweiter();
+	
 	@NotEmpty(message = "{RegistrationForm.address.NotEmpty}") //
 	String getAddress();
+	
+	@NotEmpty(message = "{RegistrationForm.email.NotEmpty}") //
+	String getEmail();
+	
+
 }

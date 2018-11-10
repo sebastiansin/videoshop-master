@@ -79,10 +79,10 @@ class CustomerDataInitializer implements DataInitializer {
 		UserAccount ua3 = userAccountManager.create("earlhickey", "123", customerRole);
 		UserAccount ua4 = userAccountManager.create("mclovinfogell", "123", customerRole);
 
-		Customer c1 = new Customer(ua1, "wurst");
-		Customer c2 = new Customer(ua2, "Miami-Dade County");
-		Customer c3 = new Customer(ua3, "Camden County - Motel");
-		Customer c4 = new Customer(ua4, "Los Angeles");
+		Customer c1 = new Customer(ua1, "wurst","wurst", "sasda");
+		Customer c2 = new Customer(ua2, "Miami-Dade County","wurst", "sasda");
+		Customer c3 = new Customer(ua3, "Camden County - Motel", "wurst","sasda");
+		Customer c4 = new Customer(ua4, "Los Angeles", "wurst","sasda");
 
 		customerRepository.saveAll(Arrays.asList(c1, c2, c3, c4));
 	}

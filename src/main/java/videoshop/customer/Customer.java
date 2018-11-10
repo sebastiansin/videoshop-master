@@ -40,12 +40,18 @@ public class Customer {
 	@OneToOne //
 	private UserAccount userAccount;
 
+	private String email;
+
+	private String vorname;
+
 	@SuppressWarnings("unused")
 	private Customer() {}
 
-	public Customer(UserAccount userAccount, String address) {
+	public Customer(UserAccount userAccount, String address, String vorname, String email) {
 		this.userAccount = userAccount;
 		this.address = address;
+		this.vorname = vorname;
+		this.email = email;
 	}
 
 	public long getId() {
@@ -62,5 +68,21 @@ public class Customer {
 
 	public UserAccount getUserAccount() {
 		return userAccount;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getZweiter() {
+		return vorname;
+	}
+
+	public void setZweiter(String vorname) {
+		this.vorname = vorname;
 	}
 }

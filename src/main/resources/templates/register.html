@@ -1,28 +1,116 @@
 <!DOCTYPE html>
-
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Zoohanldung</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    <script th:src="@{/webjars/jquery/jquery.min.js}"
-            src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script th:src="@{/webjars/Semantic-UI/semantic.min.js}"
-            src="http://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
-    <link th:href="@{/webjars/Semantic-UI/semantic.min.css}" rel="stylesheet"
-          href="http://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" type="text/css"/>
-    <link th:href="@{/resources/css/style.css}" rel="stylesheet"
-          href="../static/resources/css/style.css" type="text/css"/>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    <title th:text="#{register.title}">Registrierung</title>
+/* Style the header */
+header {
+    background-color: #83e500;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 15%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #065702;
+    padding: 20px;
+	color: white;
+}
+nav_right {
+    float: right;
+    width: 15%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #db8002;
+    padding: 20px;
+	color: white;
+}
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 500px; /* only for demonstration, should be removed */
+	 text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #83e500;
+    padding: 10px;
+    text-align: center;
+    color: white;
+	float: left;
+    width: 30%;
+}
+footer_2 {
+    background-color: #065702;
+    padding: 10px;
+    text-align: center;
+    color: white;
+	float: left;
+    width: 40%;
+}
+footer_1 {
+    background-color: #83e500;
+    padding: 10px;
+    text-align: center;
+    color: white;
+	float: right;
+    width: 30%;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
 </head>
 <body>
-<div class="ui container">
-    <header>
-        <h1 th:text="#{register.title}">Registrierung</h1>
-    </header>
-    <nav th:include="navigation :: navigation"></nav>
 
-    <form method="post" role="form" class="ui form" id="form" th:action="@{/register}" th:object="${form}">
+
+<header>
+  <h2>Zoohandlung Registrieren</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a>Einfach ein paar Infos hinzufügen</a></li>
+      
+    </ul>
+  </nav>
+  <article>
+  <form method="post" role="form" class="ui form" id="form" th:action="@{/register}" th:object="${form}">
 
         <h3 class="ui dividing header" th:text="#{register.userdata}">Nutzerdaten</h3>
 
@@ -52,9 +140,48 @@
             <p th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Die Adresse darf
                 nicht leer sein.</p>
         </div>
+                        <div class="field">
+            <label th:text="#{register.email}" for="email">Straße</label>
+            <input id="email" name="email" th:field="*{email}" th:errorclass="fieldError" type="text"
+                   required="required"/><br/>
+            <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Die Adresse darf
+                nicht leer sein.</p>
+        </div>
+                        <div class="field">
+            <label th:text="#{register.zweiter}" for="zweiter">Straße</label>
+            <input id="zweiter" name="zweiter" th:field="*{zweiter}" th:errorclass="fieldError" type="text"
+                   required="required"/><br/>
+            <p th:if="${#fields.hasErrors('zweiter')}" th:errors="*{zweiter}">Die Adresse darf
+                nicht leer sein.</p>
+        </div>
+
 
         <button type="submit" class="ui button" th:text="#{register.submit}">Registrieren</button>
     </form>
-</div>
+  
+
+	<label for="psw-repeat"><b>Akzeptieren Sie die AGBs?</b></label><br>
+	<input type="radio" name="AGB" value="ja" checked> Ja<br>
+  <input type="radio" name="AGB" value="nein"> Nein<br>
+	 </article>
+  
+  <nav_right>
+    <ul>
+      <li><a>Bild hinzufügen</a></li>
+      
+    </ul>
+  </nav_right>
+</section>
+
+<footer>
+  <p><a href="index.html">Zurück</a> </p>
+  
+</footer>
+<footer_2>
+  <p><a href="index.html">Registrieren</a> </p>
+</footer_2>
+<footer_1>
+  <p><a href="index.html">Zu den AGBs</a> </p>
+</footer_1>
 </body>
 </html>
