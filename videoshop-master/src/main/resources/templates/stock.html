@@ -25,18 +25,14 @@
     <table class="ui celled table">
         <thead>
         <tr>
-            <th th:text="hallo">Titel</th>
+            <th th:text="#{cart.movieTitle}">Titel</th>
             <th th:text="#{cart.count}">Anzahl</th>
-
-                    </tr>
+        </tr>
         </thead>
         <tbody th:remove="all-but-first">
         <tr th:each=" item : ${stock}">
             <td th:text="${item.product.name}">Last Action Hero</td>
             <td th:text="${{item.quantity}}">9000</td>
- 
-            </td>
-          
         </tr>
         <tr>
             <td>Last Action Hero</td>
@@ -49,29 +45,5 @@
         </tbody>
     </table>
 </div>
-                <!-- RABATT -->
-                <form class="ui reply form" role="form" th:action="@{/stock}" method="get">
-                
-                    <div class="newDisc" >
-                    <p> neu Disc:</p>
-                   
-                     
-                        <input type="hidden" name="pid" value="0" /> 
-                        <div class="field">
-                            <label for="number">name</label>
-                            <input id="name" type="String" name="name"/><br/>
-                            <label for="number">image</label>
-                            <input id="image" type="String" name="name"/><br/>
-                            <label for="number">price</label>
-                            <input id="price" type="number" name="name" min="0" max="100" step="1" value="0"/><br/>
-                            <label for="number">rabatt</label>
-                            <input id="rabatt" type="number" name="name" min="0" max="100" step="1" value="0"/><br/>
-                        </div>
-                        <button type="submit" class="ui labeled icon button">
-                         <span th:text="new_Disc"> Hinzufügen</span> 
-                        </button>
-                    
-                </div>
-                </form>
 </body>
 </html>
